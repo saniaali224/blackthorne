@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "e20cd395-d687-47a3-9910-1dbde4e3a68d",
+		"name": "cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"items\": \r\n        {\r\n            \"name\":\"AM200742\",\r\n            \"price\": 2200\r\n        }\r\n       ,\r\n\r\n\r\n        \"total\": 2200.00,\r\n        \"tax\":2.3,\r\n        \"discount\":0.00,\r\n        \"subTotal\":2220.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get cart items by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/cart/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"api",
+						"cart",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
