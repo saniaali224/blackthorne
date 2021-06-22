@@ -23,7 +23,6 @@ module.exports={
     "database": "shoppingcart",
     "host": DB_HOST,
     "dialect": "postgres",
-    "use_env_variable":DB_DATABASE,
     "operatorsAliases": false
   }
 };
