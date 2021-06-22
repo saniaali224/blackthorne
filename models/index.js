@@ -13,6 +13,7 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config, {
     dialect: 'postgres',
   });
+  console.log(process.env);
 } else {
   sequelize = new Sequelize('postgres://postgres:helloworld123@localhost/shoppingcart',  {
     dialect: 'postgres',
