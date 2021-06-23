@@ -22,7 +22,8 @@ module.exports={
     // "password": DB_PASSWORD,
     // "database": "shoppingcart",
     // "host": DB_HOST,
-    "use_env_variable":"postgres://jugcpvgtsskzlz:7952443ff5c1a84d6c1a82295f3cfce541925e8b80d67363bb103dee1ad45e1e@ec2-18-233-83-165.compute-1.amazonaws.com:5432/d55n4r70as9p85",
+    "dialect": "postgres",
+    "use_env_variable":DATABASE_URL,
     // "operatorsAliases": false
   }
 };
