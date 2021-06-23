@@ -18,12 +18,12 @@ module.exports={
     "operatorsAliases": false
   },
   "production": {
-    "username": DB_USERNAME,
-    "password": DB_PASSWORD,
-    "database": "shoppingcart",
-    "host": DB_HOST,
+    // "username": DB_USERNAME,
+    // "password": DB_PASSWORD,
+    // "database": "shoppingcart",
+    // "host": DB_HOST,
     "dialect": "postgres",
     "use_env_variable":DATABASE_URL,
-    "operatorsAliases": false
+    // "operatorsAliases": false
   }
 };
