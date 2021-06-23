@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE } = process.env;
+const { DB_HOST, DB_USERNAME, DB_PASSWORD, DATABASE_URL } = process.env;
 module.exports={
   "development": {
     "username": DB_USERNAME,
@@ -23,7 +23,7 @@ module.exports={
     "database": "shoppingcart",
     "host": DB_HOST,
     "dialect": "postgres",
-    // "use_env_variable":DB_DATABASE,
+    "use_env_variable":DATABASE_URL,
     "operatorsAliases": false
   }
 };
